@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Backing-up package..."
+
+pacman -Qqen >$HOME/Documents/bak/packagelist.txt
+
+echo "Backed-up package list."
+echo "Backing-up foreign package list.."
+
+pacman -Qqem >$HOME/Documents/bak/foreignpkglist.txt
+
+echo "Back-up completed."
