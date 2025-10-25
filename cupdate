@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+checkupdates >> ~/Documents/updateslist.txt
+
+cat ~/Documents/updateslist.txt
+
+exit 0
